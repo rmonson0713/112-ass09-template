@@ -27,14 +27,12 @@
  * The caller owns the returned block and must free it.
  */
 int *alloc_ints(size_t count);
-
 /*
  * STEP 2: alloc_zeroed_ints
  * Does the same as alloc_ints(), but every byte of the block is zero
  * (use calloc()). Returns NULL if count is 0 or if the allocation fails.
  */
 int *alloc_zeroed_ints(size_t count);
-
 /*
  * STEP 3: safe_free
  * Frees the block that a pointer points to AND sets that pointer to NULL, so
