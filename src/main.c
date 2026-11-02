@@ -5,7 +5,7 @@
  *   #include "code.h"
  * 
  * This tells the compiler where to find the function prototypes.
- * Without this include, the compiler won't know about your functions!
+ * Without this include, the compiler won't know about your functions!  
  */
 
 #include <stdio.h>
