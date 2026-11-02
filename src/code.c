@@ -223,6 +223,11 @@ ByteBuffer *buffer_create(size_t capacity)
 
 bool buffer_reserve(ByteBuffer *buf, size_t min_capacity)
 {
+    if (buf == NULL) 
+    {
+        return false;
+    }
+
     size_t new_capacity = buf->capacity;
     while (new_capacity < min_capacity)
     {
